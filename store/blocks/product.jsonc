@@ -28,7 +28,7 @@
       "buy-button"
     ],
     "props": {
-      "verticalAlign": "center",
+      "verticalAlign": "middle",
       "preventVerticalStretch": true
     }
   },
