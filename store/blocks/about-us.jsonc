@@ -7,47 +7,35 @@
 
   "flex-layout.row#about-us": {
     "children": [
-      "flex-layout.col#about-us-left",
-      "flex-layout.col#about-us-right"
-    ],
-    "props": {
-    }
-  },
-
-  "flex-layout.col#about-us-left": {
-    "children": [
-      "image##about-us"
+      "image#about-us",
+      "flex-layout.col#text-about-us"
     ]
   },
-  "image##about-us": {
-    "props": {
-      "src": "https://images.unsplash.com/photo-1565538810643-b5bdb714032a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2134&q=80",
-      "maxHeight": "85vh"
-    }
-  },
-
-  "flex-layout.col#about-us-right": {
+  "flex-layout.col#text-about-us": {
     "children": [
-      "rich-text#about-us-heading",
-      "rich-text#about-us-text"
+      "rich-text#about-title",
+      "rich-text#about-content"
     ],
-    "props": {
-      "verticalAlign": "top",
-      "paddingTop": 10
+        "props": {
+      "preventVerticalStretch": true
     }
   },
-  "rich-text#about-us-heading": {
+ "rich-text#about-title": {
     "props": {
-      "textAlignment": "LEFT",
-      "textPosition": "LEFT",
-      "text": "# Sobre a FlatFlat"
+      "text":
+      "# Sobre a FlatFlat"
     }
   },
-  "rich-text#about-us-text": {
+  "rich-text#about-content": {
     "props": {
-      "textAlignment": "LEFT",
-      "textPosition": "LEFT",
-      "text": "FlatFlat é uma loja de eletro eletrônicos com muita tradição na fabricação de itens modernos e vintage. Nosso objetivo é criar eletrodomésticos que tornem as casas dos nossos clientes interessantes, independente do estilo. Com apenas 2 meses de história, já somos a loja com produtos mais bonitos de toda a VTEX. Estamos construindo o nosso site nesse momento com o intuito de dar ao nosso cliente uma experiência memorável com a nossa marca!"
+      "text":
+      " FlatFlat é uma loja de eletro eletrônicos com muita tradição na fabricação de itens modernos e vintage. Nosso objetivo é criar eletrodomésticos que tornem as casas dos nossos clientes interessantes, independente do estilo. Com apenas 2 meses de história, já somos a loja com os produtos mais bonitos de toda a VTEX. Estamos construindo o nosso site nesse momento com o intuito de dar ao nosso cliente uma experiência memorável com a nossa marca!"
+    }
+  },
+  "image#about-us": {
+    "props": {
+      "src": "https://appliancetheme.vteximg.com.br/arquivos/cozinha-about-us.png",
+      "maxHeight": "600px"
     }
   }
 }
